@@ -57,6 +57,8 @@
         <param name="robot_frame" value="$(arg robot_frame)" />
         <param name="camera_frame" value="$(arg camera_frame)" />
 
+        <param name="min_update_error" value="1500"/>
+
         <remap from="~twist" to="$(arg body_velocity_req_ibvs)" />
         <remap from="~target" to="/det_and_track/target" />
         <remap from="~roi" to="/det_and_track/roi" />
